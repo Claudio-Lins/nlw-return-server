@@ -28,6 +28,8 @@ routes.post("/feedbacks", async (req, res) => {
   return res.status(201).send();
   } catch (error) {
     console.error(error);
+
+    return res.status(500).send();
   }
 
 });
