@@ -27,9 +27,9 @@ routes.post("/feedbacks", async (req, res) => {
 
   return res.status(201).send();
   } catch (error) {
-    console.error(error);
+    console.error('Error Catch', error);
 
-    return res.status(500).send();
+    return res.status(500).send('Internal Server Error');
   }
 
 });
